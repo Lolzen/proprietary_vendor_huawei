@@ -20,6 +20,7 @@ ifeq ($(TARGET_DEVICE),angler)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := GCS
+LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := proprietary/priv-app/GCS/GCS.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
