@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/huawei/angler/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/angler/proprietary/lib64/hw/gps.msm8994.so:system/lib64/hw/gps.msm8994.so \
+    vendor/huawei/angler/proprietary/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
     vendor/huawei/angler/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
     vendor/huawei/angler/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
     vendor/huawei/angler/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
@@ -29,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/hw/gps.msm8994.so:system/lib/hw/gps.msm8994.so \
     vendor/huawei/angler/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/huawei/angler/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
+    vendor/huawei/angler/proprietary/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
     vendor/huawei/angler/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/huawei/angler/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/huawei/angler/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
@@ -36,6 +38,17 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     GCS \
+    HotwordEnrollment \
     qcrilmsgtunnel \
     com.google.widevine.software.drm \
     qcrilhook
+PRODUCT_COPY_FILES += \
+    vendor/huawei/angler/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
+    vendor/huawei/angler/proprietary/app/ims/lib/arm64/libimscamera_jni.so:system/app/ims/lib/arm64/libimscamera_jni.so \
+    vendor/huawei/angler/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/huawei/angler/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/app/ims/lib/arm64/libimsmedia_jni.so \
+    vendor/huawei/angler/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
+    vendor/huawei/angler/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so
+
+PRODUCT_PACKAGES += \
+    ims
