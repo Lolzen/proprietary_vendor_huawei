@@ -32,7 +32,9 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/hw/audio.primary.msm8994.so:system/lib/hw/audio.primary.msm8994.so \
     vendor/huawei/angler/proprietary/lib/hw/gps.msm8994.so:system/lib/hw/gps.msm8994.so \
     vendor/huawei/angler/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
+    vendor/huawei/angler/proprietary/priv-app/DMService/lib/arm/libdmengine.so:system/priv-app/DMService/lib/arm/libdmengine.so \
     vendor/huawei/angler/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
+    vendor/huawei/angler/proprietary/priv-app/DMService/lib/arm/libdmjavaplugin.so:system/priv-app/DMService/lib/arm/libdmjavaplugin.so \
     vendor/huawei/angler/proprietary/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
     vendor/huawei/angler/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/huawei/angler/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
@@ -41,9 +43,18 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so
 
 PRODUCT_PACKAGES += \
+    Tycho \
+    CarrierServices \
+    CNEService \
+    ConnMO \
+    DCMO \
+    DiagMon \
+    DMService \
     GCS \
+    HiddenMenu \
     HotwordEnrollment \
     qcrilmsgtunnel \
+    SprintDM \
     com.google.widevine.software.drm \
     qcrilhook
 PRODUCT_COPY_FILES += \
