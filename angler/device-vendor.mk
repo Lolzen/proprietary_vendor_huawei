@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so
 
 PRODUCT_PACKAGES += \
-    libtime_genoff \
     Tycho \
     CarrierServices \
     CNEService \
@@ -67,4 +66,5 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so
 
 PRODUCT_PACKAGES += \
+    libtime_genoff \
     ims

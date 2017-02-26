@@ -19,17 +19,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),angler)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libtime_genoff
-LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES_64 := proprietary/lib64/libtime_genoff.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libtime_genoff.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := Tycho
 LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
@@ -190,6 +179,17 @@ LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libtime_genoff
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES_64 := proprietary/lib64/libtime_genoff.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libtime_genoff.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
