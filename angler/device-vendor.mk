@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so
 
 PRODUCT_PACKAGES += \
+    libtime_genoff \
     Tycho \
     CarrierServices \
     CNEService \
