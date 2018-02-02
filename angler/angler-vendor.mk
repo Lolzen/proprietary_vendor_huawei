@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/etc/diag/Angler_Radio-general.cfg:system/etc/diag/Angler_Radio-general.cfg \
     vendor/huawei/angler/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/huawei/angler/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
-    vendor/huawei/angler/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/huawei/angler/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/angler/proprietary/lib64/hw/gps.msm8994.so:system/lib64/hw/gps.msm8994.so \
     vendor/huawei/angler/proprietary/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
@@ -36,11 +35,10 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/huawei/angler/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/huawei/angler/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
-    vendor/huawei/angler/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so
 
 PRODUCT_PACKAGES += \
     GCS \
-    HotwordEnrollment \
+    HotwordEnrollmentWCD9330 \
     qcrilmsgtunnel \
     com.google.widevine.software.drm \
     qcrilhook
